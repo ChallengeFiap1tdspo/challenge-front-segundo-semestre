@@ -2,6 +2,18 @@ import React from "react";
 import logoHospital from "../img/logo_hospital.png";
 
 const Header: React.FC = () => {
+  const linkBase =
+    "no-underline font-bold text-base px-6 py-2.5 transition-colors";
+  const active = "bg-[#00a1e0] text-white";
+  const inactive = "text-[#005b96] hover:bg-gray-100";
+
+  // Função para verificar a rota atual e aplicar estilo "ativo"
+  const getLinkClass = (path: string) => {
+    return `${linkBase} ${
+      window.location.pathname === path ? active : inactive
+    }`;
+  };
+
   return (
     <header
       className="w-full border-b-[1px] border-b-[#817f81]"
@@ -22,16 +34,24 @@ const Header: React.FC = () => {
             style={{ gap: "1.75rem" }}
           >
             <li>
-              <a href="/">Início</a>
+              <a href="/" className={getLinkClass("/")}>
+                Início
+              </a>
             </li>
             <li>
-              <a href="/faq">FAQ</a>
+              <a href="/faq" className={getLinkClass("/faq")}>
+                FAQ
+              </a>
             </li>
             <li>
-              <a href="/contato">Contato</a>
+              <a href="/contato" className={getLinkClass("/contato")}>
+                Contato
+              </a>
             </li>
             <li>
-              <a href="/equipe">Equipe</a>
+              <a href="/equipe" className={getLinkClass("/equipe")}>
+                Equipe
+              </a>
             </li>
           </ul>
         </nav>
