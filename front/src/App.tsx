@@ -9,7 +9,7 @@ export default function App() {
       <main className="flex-grow">
         <Outlet />
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
