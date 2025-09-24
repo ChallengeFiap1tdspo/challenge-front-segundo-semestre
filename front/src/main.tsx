@@ -1,0 +1,35 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import App from "./App";
+import Home from "./routes/Home";
+import Contato from "./routes/Contato";
+import PrimeiroContato from "./routes/PrimeiroContato";
+import Ajuda from "./routes/Ajuda";
+import Faq from "./routes/Faq";
+import Integrantes from "./routes/Integrantes";
+
+// Importando o CSS fora do src
+import "../global.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "contato", element: <Contato /> },
+      { path: "primeiro-contato", element: <PrimeiroContato /> },
+      { path: "ajuda", element: <Ajuda /> },
+      { path: "faq", element: <Faq /> },
+      { path: "equipe", element: <Integrantes /> },
+    ],
+  },
+]);
+
+createRoot(document.getElementById("root") as HTMLElement).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
+);

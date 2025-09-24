@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+@layer components {
+  .app-body {
+    background-color: white;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    line-height: 1.625;
+    font-size: 1rem;
+  }
+}
