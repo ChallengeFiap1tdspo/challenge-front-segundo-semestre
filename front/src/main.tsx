@@ -21,14 +21,14 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-      { path: "login", element: <Login /> },
-      { path: "cadastro", element: <Cadastro /> },
+    //   { path: "login", element: <Login /> },
+    //   { path: "cadastro", element: <Cadastro /> },
       { path: "contato", element: <Contato /> },
       { path: "primeiro-contato", element: <PrimeiroContato /> },
       { path: "ajuda", element: <Ajuda /> },
       { path: "faq", element: <Faq /> },
       { path: "equipe", element: <Integrantes /> },
-      { path: "form-contato", element: <FormContato /> },
+    //   { path: "form-contato", element: <FormContato /> },
     ],
   },
 ]);
