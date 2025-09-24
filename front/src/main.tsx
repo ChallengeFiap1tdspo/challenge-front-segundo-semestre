@@ -11,9 +11,9 @@ import PrimeiroContato from "./routes/PrimeiroContato";
 import Ajuda from "./routes/Ajuda";
 import Faq from "./routes/Faq";
 import Integrantes from "./routes/Integrantes";
-// import FormContato from "./components/FormContato";
+// import FormContato from "./Components/FormContato";
 
-import "./global.css"; 
+import "../global.css";
 
 const router = createBrowserRouter([
   {
@@ -21,21 +21,23 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-    //   { path: "login", element: <Login /> },
-    //   { path: "cadastro", element: <Cadastro /> },
+      // { path: "login", element: <Login /> },
+      // { path: "cadastro", element: <Cadastro /> },
       { path: "contato", element: <Contato /> },
       { path: "primeiro-contato", element: <PrimeiroContato /> },
       { path: "ajuda", element: <Ajuda /> },
       { path: "faq", element: <Faq /> },
       { path: "equipe", element: <Integrantes /> },
-    //   { path: "form-contato", element: <FormContato /> },
+      // { path: "form-contato", element: <FormContato /> },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
+
     <div className="app-body flex flex-col min-h-screen">
+
       <main className="flex-grow">
         <RouterProvider router={router} />
       </main>
