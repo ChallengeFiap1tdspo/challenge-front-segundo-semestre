@@ -1,3 +1,4 @@
+import ImagemIdosoNaTeleConsulta from "../img/ImagemIdosoNaTeleConsulta.jpg";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -30,6 +31,13 @@ export default function Home() {
               Novo paciente? Cadastre-se aqui
             </Link>
           </div>
+        </section>
+
+        <section>
+          <img
+            src={ImagemIdosoNaTeleConsulta}
+            alt="Paciente usando tablet para consulta online"
+          />
         </section>
       </div>
     </main>
