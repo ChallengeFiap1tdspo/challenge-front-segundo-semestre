@@ -37,9 +37,16 @@ export default function Home() {
           <img
             src={ImagemIdosoNaTeleConsulta}
             alt="Paciente usando tablet para consulta online"
+            className="w-full max-w-[700px] rounded-lg shadow-md transition-transform duration-300 ease-in-out md:ml-24 hover:scale-105"
           />
         </section>
       </div>
     </main>
   );
 }
+
+// #f8f9fa
+// #005b96
+// #004570
+// #00a1e0
+// #008ecc
