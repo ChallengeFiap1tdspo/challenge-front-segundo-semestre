@@ -11,7 +11,7 @@ import PrimeiroContato from "./routes/PrimeiroContato";
 import Ajuda from "./routes/Ajuda";
 import Faq from "./routes/Faq";
 import Integrantes from "./routes/Integrantes";
-import FormContato from "./Components/FormContato";
+import FormContato from "./components/FormContato";
 
 import "../global.css";
 

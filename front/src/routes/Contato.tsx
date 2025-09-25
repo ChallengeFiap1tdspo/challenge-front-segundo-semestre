@@ -1,6 +1,6 @@
 import React from "react";
-import ContactIcon from "../Components/ContactIcon";
-import FormContato from "../Components/FormContato";
+import ContactIcon from "../components/ContactIcon";
+import FormContato from "../components/FormContato";
 
 import telefone from "../img/telefone.png";
 import whatsapp from "../img/whatsapp_logo.png";
